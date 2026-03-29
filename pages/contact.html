@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Личный сайт</div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="about.html">Обо мне</a></li>
+        <li><a href="skills.html">Навыки</a></li>
+        <li><a href="works.html">Работы</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+      <button id="theme-btn">Темная тема</button>
+    </nav>
+  </header>
+
+  <main style="padding: 2rem;">
+    <h1>Связаться со мной</h1>
+    <form onsubmit="return validateForm()" style="margin-top:1rem; display:flex; flex-direction:column; gap:1rem; max-width:400px;">
+      <input type="text" id="name" placeholder="Ваше имя" required>
+      <input type="email" id="email" placeholder="Ваш email" required>
+      <textarea id="message" rows="5" placeholder="Сообщение" required></textarea>
+      <button type="submit" class="btn">Отправить</button>
+    </form>
+  </main>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

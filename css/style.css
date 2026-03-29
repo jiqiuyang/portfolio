@@ -1,0 +1,98 @@
+/* CSS变量 符合现代技术要求 */
+:root {
+  --primary-color: #4a6cf7;
+  --text-color: #333;
+  --bg-color: #fff;
+  --card-color: #f8f9fa;
+}
+/* 深色模式变量 */
+.dark-theme {
+  --primary-color: #6d8aff;
+  --text-color: #fff;
+  --bg-color: #1a1a1a;
+  --card-color: #2d2d2d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  /* 过渡动画 符合要求 */
+  transition: 0.3s;
+}
+
+/* 导航栏 Flex布局 现代CSS */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--primary-color);
+  color: white;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+/* 悬停效果 */
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+#theme-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 首页内容 */
+.home {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+.home-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+/* 按钮动画 */
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* 响应式 手机适配 */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+  }
+}

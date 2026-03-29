@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный сайт</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Личный сайт</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="pages/about.html">Обо мне</a></li>
+        <li><a href="pages/skills.html">Навыки</a></li>
+        <li><a href="pages/works.html">Работы</a></li>
+        <li><a href="pages/contact.html">Контакты</a></li>
+      </ul>
+      <button id="theme-btn">Темная тема</button>
+    </nav>
+  </header>
+
+  <main class="home">
+    <div class="home-content">
+      <h1>Привет, Меня зовут Цзи Цюян</h1>
+      <p>Добро пожаловать на мой личный сайт!</p>
+      <a href="pages/about.html" class="btn">Узнать больше</a>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
